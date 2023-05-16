@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Wix+Madefor+Display:wght@400;700;800&display=swap');
+
+:root{
+    --black: rgb(12, 12, 12);
+    --white-transparent: rgba(245, 240, 240, 0.900);
+    --white: rgb(245, 240, 240);
+    --grey: rgb(165, 161, 161);
+    --lightgrey: rgb(223, 211, 211); 
+    --lightgrey-hover: rgba(223, 211, 211, 0.397); 
+    --blue: rgb(55, 101, 172);
+    --test: #f0f;
+}
+body{
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: var(--black);
+    background-image: url('../images/desk.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+section{
+    width: 90%;
+}
+.main-container{
+    padding: 2%;
+    height: 500px;
+    width: 20%;
+    background-color: var(--white-transparent);
+    transform: rotate(-15deg);
+    box-shadow: 0 0 6px var(--grey);
+    transition: all 0.3s;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+.first-page{
+    z-index: 4;
+}
+.second-page{
+    z-index: 3;
+}
+.third-page{
+    z-index: 2;
+}
+.main-container:hover{
+    width: 50%;
+    height: 80%;
+    z-index: 999;
+    background-color: var(--white);
+    margin: 5%;
+    transform: rotate(0);
+    font-size: 1.3rem;
+}
+.main-container div[class*="page"], .main-container .section-after-title{
+    display: none;
+}
+.main-container:hover div[class*="page"], .main-container:hover .section-after-title{
+    display: flex;
+}
+.main-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title__title{
+    font-size: 2.5rem;
+}
+.main-title__subtitle, .second-page__h3, .third-page__h3, .fourth-page__h3{
+    font-size: 2rem;
+}
+.first-page__section, .second-page__section, .third-page__section, .fourth-page__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    gap: 3rem;
+}
+.first-page__img{
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--black);
+    width: 35%;
+    margin: auto;
+}
+.first-page__h3 span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -40px;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--blue);
+    text-shadow: 0 0 2px var(--black);
+}
+.char0{
+    transform: rotate(-60deg);
+}
+.char1{
+    transform: rotate(-50deg);
+}
+.char2{
+    transform: rotate(-40deg);
+}
+.char3{
+    transform: rotate(-30deg);
+}
+.char4{
+    transform: rotate(-20deg);
+}
+.char5{
+    transform: rotate(5deg);
+}
+.char6{
+    transform: rotate(20deg);
+}
+.char7{
+    transform: rotate(30deg);
+}
+.char8{
+    transform: rotate(40deg);
+}
+.char9{
+    transform: rotate(50deg);
+}
+.char1-1{
+    transform: rotate(70deg);
+}
+.first-page p{
+    text-align: center;
+}
+.second-page__list{
+    width: 100%;
+}
+.li__titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7rem;
+}
+.li__titles p{
+    margin-top: 5%;
+    font-weight: bold;
+    border-bottom: 2px solid var(--blue);
+}
+.li__subparts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: normal;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.li__subparts li{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+.li__subparts li i{
+    color: var(--blue);
+}
+.hobbies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    margin-top: 10%;
+}
+.hobbies__card{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--lightgrey);
+    box-shadow: 0 0 6px var(--grey);
+    padding: 2%;
+    height: 200px;
+    text-align: center;
+    gap: 2rem;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+.hobbies__card:hover{
+    font-weight: bold;
+    background-color: var(--lightgrey-hover);
+}
+.hobbies__card:hover .hobbies__image{
+    display: flex;
+}
+
+.hobbies__image{
+    display: none;
+    width: 150px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 6px var(--grey);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 10%;
+}
+.contact__card{
+    background-color: var(--lightgrey);
+    width: 45%;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.2s;
+    box-shadow: 0 0 6px var(--grey);
+}
+.contact__card:hover{
+    background-color: var(--lightgrey-hover);
+    font-weight: bold;
+}
+.contact__card:hover::before{
+    content: '→';
+    font-size: 3rem;
+    color: var(--blue);
+    position: absolute;
+    top: 20%;
+    left: -70%;
+    width: 100%;
+    height: 10px;
+}
+.contact__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20%;
+    text-decoration: none;
+    color: var(--black);
+    gap: 1rem;
+}
+.contact__link i{
+    color: var(--blue);
+}
+
+@media screen and (max-width: 768px){
+    .main-container{
+        width: 60%;
+    }
+    .main-container:hover{
+        width: 90%;
+        margin: 0;
+    }
+    .second-page:hover, .third-page:hover{
+        height: auto;
+    }
+    .hobbies{
+        flex-direction: column;
+    }
+    .hobbies__card{
+        width: 60%;
+    }
+    .contact__card{
+        width: 60%;
+    }
+    .contact__link{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    
+    .main-container{
+        width: 40%;
+    }
+    .main-container:hover{
+        margin: 0;
+    }
+    .second-page:hover, .third-page:hover{
+        height: auto;
+    }
+    .hobbies{
+        width: 100%;
+        gap: 1rem;
+    }
+    .hobbies__card{
+        width: 47%;
+    }
+    .hobbies__image{
+        width: 95%;
+    }
+    .contact__card{
+        width: 60%;
+    }
+    .contact__link{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1201px) {
+    body{
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+    .second-page:hover{
+        height: auto;
+    }
+}
