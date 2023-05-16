@@ -278,7 +278,7 @@ section{
         width: 90%;
         margin: 0;
     }
-    .second-page:hover, .third-page:hover{
+    .first-page:hover, .second-page:hover, .third-page:hover, .fourth-page:hover{
         height: auto;
     }
     .hobbies{
@@ -301,8 +301,9 @@ section{
     }
     .main-container:hover{
         margin: 0;
+        
     }
-    .second-page:hover, .third-page:hover{
+    .first-page:hover, .second-page:hover, .third-page:hover, .fourth-page:hover{
         height: auto;
     }
     .hobbies{
